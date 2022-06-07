@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+gem "rspec", "~> 3.11"
+gem 'capybara'
+gem 'webdrivers', '~> 5.0', require: false
