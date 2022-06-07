@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>It's time to play: Battle!</h1>
+<h4><%=@game.player_1.name%> vs <%=@game.player_2.name%></h4>
+
+<p><%=@game.current_turn.name%> is now in control</p>
+
+<p> Current points: 
+<ul>
+<li><%=@game.player_1.name%>: <%=@game.player_1.points%>HP </li>
+<li><%=@game.player_2.name%>: <%=@game.player_2.points%>HP </li>
+</ul>
+</p>
+
+
+<p> Press the attack button to attack your opponent </p>
+<form type="attack" action="/attack">
+<button>Attack</button>
+</form>
+</body>
+</html>
